@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+    <style>
+
+    </style>
+    <head>
+        <title>Last.fm explorer</title>
+        <!-- <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.min.css"> -->
+    </head>
+
+    <body>
+        <div id="timeline" data-tracks='{{ tracks|tojson }}'>...</div>
+        
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+        <script src="{{url_for('static', filename='script.js')}}"></script>
+    </body>
+</html>

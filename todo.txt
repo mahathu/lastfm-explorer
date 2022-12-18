@@ -1,0 +1,29 @@
+add to github
+add web frontend
+    - results are updated automatically after zooming/scrolling
+    - bars of most played song have the background color of the right side of that album
+    - albums have a translucent gradient overlay
+add cache
+    - maybe use SQL?
+        - potential solution: API to load data from sqlite database
+    - auto update cached usernames in regular intervals
+add loading spinner (based on % of sites loaded)
+    - also show "last scraped track"
+        - add checkbox for this feature
+    - also show "estimated time remaining"
+use svelte for frontend
+use vis.js
+
+extra feature:
+- custom date range
+    - show top 10 artists as stacked histogram, all others together as "others" (map percentage of artist per time)
+
+- hype chart: welcher künstler hat höchsten anteil an last 100 played tracks? wann war das?
+- longest favourite artist in a row
+- most often favourite artist (separate times)
+- line chart: fav artist volatility (by length between changes)
+- change N of recent tracks considered for shorter window lengths
+- one hit wonders: artists with highest percentage of top #1 hit in total plays
+    - and the opposite: artists where top #1 song had least relative plays to rest of songs
+
+- use CSS media queries to only show album/artist pic when block is long enough
